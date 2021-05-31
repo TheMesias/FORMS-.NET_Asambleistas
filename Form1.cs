@@ -12,9 +12,11 @@ namespace Asambleistas
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
+            showForm(new FormHome()); 
             desing();
         }
 
@@ -68,10 +70,10 @@ namespace Asambleistas
 
         private void btn_socialCristiano_Click(object sender, EventArgs e)
         {
+       
             hideSubmenu();
-
-            FrmSocialCristiano ObjPsc = new FrmSocialCristiano();
-            ObjPsc.Show();
+            showForm(new FrmSocialCristiano());
+         
 
         }
 
@@ -102,6 +104,25 @@ namespace Asambleistas
             Application.Exit();
         }
 
-       
+        /*Panel contenedor*/
+        private void showForm(object formShow)
+        {
+            if (this.panel_Contenedor.Controls.Count > 0)
+            {
+                this.panel_Contenedor.Controls.RemoveAt(0);
+            }
+
+            Form fh = formShow as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panel_Contenedor.Controls.Add(fh);
+            this.panel_Contenedor.Tag = fh;
+            fh.Show();
+        }
+
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            showForm(new FormHome());
+        }
     }
 }
