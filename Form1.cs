@@ -68,7 +68,11 @@ namespace Asambleistas
 
         private void btn_socialCristiano_Click(object sender, EventArgs e)
         {
-            hideSubmenu(); 
+            hideSubmenu();
+
+            FrmSocialCristiano ObjPsc = new FrmSocialCristiano();
+            ObjPsc.Show();
+
         }
 
         /*Mover el Forms*/
