@@ -50,7 +50,8 @@ namespace Asambleistas
 
         private void btn_Directiva_Click(object sender, EventArgs e)
         {
-            hideSubmenu(); 
+            hideSubmenu();
+            showForm(new FormDirectiva());
         }
 
         private void btn_Creo_Click(object sender, EventArgs e)

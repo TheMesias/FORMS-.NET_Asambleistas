@@ -49,5 +49,10 @@ namespace Asambleistas
         {
             PnlInfoNat.Visible = false;
         }
+
+        private void FrmSocialCristiano_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
