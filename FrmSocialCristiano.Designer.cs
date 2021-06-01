@@ -31,7 +31,6 @@ namespace Asambleistas
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSocialCristiano));
             this.Pbx_LogoPsc = new System.Windows.Forms.PictureBox();
-            this.GrbxDesPsc = new System.Windows.Forms.GroupBox();
             this.PnlHen = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -41,17 +40,18 @@ namespace Asambleistas
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PnlInfoNat = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.BtnGuarNat = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.PbxEdiNat = new System.Windows.Forms.PictureBox();
             this.PnlInfoHen = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BtnGuarHen = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.PbxEditarHen = new System.Windows.Forms.PictureBox();
+            this.PbxEditHen = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_LogoPsc)).BeginInit();
             this.PnlHen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,7 +60,7 @@ namespace Asambleistas
             this.PnlInfoNat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbxEdiNat)).BeginInit();
             this.PnlInfoHen.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PbxEditarHen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbxEditHen)).BeginInit();
             this.SuspendLayout();
             // 
             // Pbx_LogoPsc
@@ -72,16 +72,6 @@ namespace Asambleistas
             this.Pbx_LogoPsc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pbx_LogoPsc.TabIndex = 0;
             this.Pbx_LogoPsc.TabStop = false;
-            // 
-            // GrbxDesPsc
-            // 
-            this.GrbxDesPsc.Location = new System.Drawing.Point(284, 25);
-            this.GrbxDesPsc.Name = "GrbxDesPsc";
-            this.GrbxDesPsc.Size = new System.Drawing.Size(391, 115);
-            this.GrbxDesPsc.TabIndex = 1;
-            this.GrbxDesPsc.TabStop = false;
-            this.GrbxDesPsc.Text = resources.GetString("GrbxDesPsc.Text");
-            this.GrbxDesPsc.Enter += new System.EventHandler(this.GrbxDesPsc_Enter);
             // 
             // PnlHen
             // 
@@ -182,7 +172,7 @@ namespace Asambleistas
             // PnlInfoNat
             // 
             this.PnlInfoNat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.PnlInfoNat.Controls.Add(this.groupBox2);
+            this.PnlInfoNat.Controls.Add(this.label9);
             this.PnlInfoNat.Controls.Add(this.label5);
             this.PnlInfoNat.Controls.Add(this.BtnGuarNat);
             this.PnlInfoNat.Controls.Add(this.label6);
@@ -192,18 +182,6 @@ namespace Asambleistas
             this.PnlInfoNat.Size = new System.Drawing.Size(244, 240);
             this.PnlInfoNat.TabIndex = 8;
             this.PnlInfoNat.Visible = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox2.Location = new System.Drawing.Point(16, 107);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(193, 83);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "DESCRIPCION: Publicidad y Marketing, luego siguiendo la tradición de su familia s" +
-    "e graduó de Abogada, maestría en Derecho Empresarial.";
             // 
             // label5
             // 
@@ -254,29 +232,17 @@ namespace Asambleistas
             // PnlInfoHen
             // 
             this.PnlInfoHen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.PnlInfoHen.Controls.Add(this.groupBox1);
+            this.PnlInfoHen.Controls.Add(this.label8);
             this.PnlInfoHen.Controls.Add(this.BtnGuarHen);
             this.PnlInfoHen.Controls.Add(this.label4);
             this.PnlInfoHen.Controls.Add(this.label3);
-            this.PnlInfoHen.Controls.Add(this.PbxEditarHen);
+            this.PnlInfoHen.Controls.Add(this.PbxEditHen);
             this.PnlInfoHen.Location = new System.Drawing.Point(84, 202);
             this.PnlInfoHen.Name = "PnlInfoHen";
             this.PnlInfoHen.Size = new System.Drawing.Size(244, 240);
             this.PnlInfoHen.TabIndex = 7;
             this.PnlInfoHen.Visible = false;
             this.PnlInfoHen.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox1.Location = new System.Drawing.Point(23, 107);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(193, 83);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "DESCRIPCION: ingeniero mecánico, diplomado en Economía, especialidades en Ingenie" +
-    "ría Nuclear y Finanzas.";
             // 
             // BtnGuarHen
             // 
@@ -312,15 +278,46 @@ namespace Asambleistas
             this.label3.TabIndex = 9;
             this.label3.Text = "PARTIDO: Partido Social Cristiano";
             // 
-            // PbxEditarHen
+            // PbxEditHen
             // 
-            this.PbxEditarHen.Image = ((System.Drawing.Image)(resources.GetObject("PbxEditarHen.Image")));
-            this.PbxEditarHen.Location = new System.Drawing.Point(211, 4);
-            this.PbxEditarHen.Name = "PbxEditarHen";
-            this.PbxEditarHen.Size = new System.Drawing.Size(30, 30);
-            this.PbxEditarHen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PbxEditarHen.TabIndex = 8;
-            this.PbxEditarHen.TabStop = false;
+            this.PbxEditHen.Image = ((System.Drawing.Image)(resources.GetObject("PbxEditHen.Image")));
+            this.PbxEditHen.Location = new System.Drawing.Point(211, 4);
+            this.PbxEditHen.Name = "PbxEditHen";
+            this.PbxEditHen.Size = new System.Drawing.Size(30, 30);
+            this.PbxEditHen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PbxEditHen.TabIndex = 8;
+            this.PbxEditHen.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(278, 36);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(407, 112);
+            this.label7.TabIndex = 9;
+            this.label7.Text = resources.GetString("label7.Text");
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(25, 107);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(170, 64);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "DESCRIPCION: ingeniero \r\nmecánico, diplomado en\r\nEconomía, especialidades en\r\n In" +
+    "geniería Nuclear y Finanzas.";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label9.Location = new System.Drawing.Point(18, 107);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(174, 80);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "DESCRIPCION: Publicidad y \r\nMarketing, luego siguiendo la \r\ntradición de su famil" +
+    "ia se\r\ngraduó de Abogada,maestría \r\nen Derecho Empresarial.";
             // 
             // FrmSocialCristiano
             // 
@@ -328,11 +325,11 @@ namespace Asambleistas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(784, 623);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.PnlInfoNat);
-            this.Controls.Add(this.PnlInfoHen);
             this.Controls.Add(this.PnlNat);
+            this.Controls.Add(this.PnlInfoHen);
             this.Controls.Add(this.PnlHen);
-            this.Controls.Add(this.GrbxDesPsc);
             this.Controls.Add(this.Pbx_LogoPsc);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -351,15 +348,15 @@ namespace Asambleistas
             ((System.ComponentModel.ISupportInitialize)(this.PbxEdiNat)).EndInit();
             this.PnlInfoHen.ResumeLayout(false);
             this.PnlInfoHen.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PbxEditarHen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbxEditHen)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox Pbx_LogoPsc;
-        private System.Windows.Forms.GroupBox GrbxDesPsc;
         private System.Windows.Forms.Panel PnlHen;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -372,13 +369,14 @@ namespace Asambleistas
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel PnlInfoHen;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button BtnGuarHen;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox PbxEditarHen;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.PictureBox PbxEditHen;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }
