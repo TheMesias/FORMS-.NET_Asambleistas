@@ -127,6 +127,7 @@ namespace Asambleistas
             this.dataGridView1.Location = new System.Drawing.Point(140, 371);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(544, 243);
             this.dataGridView1.TabIndex = 16;
             // 
@@ -134,26 +135,31 @@ namespace Asambleistas
             // 
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
             // 
             // Informacion
             // 
             this.Informacion.HeaderText = "Informacion";
             this.Informacion.Name = "Informacion";
+            this.Informacion.ReadOnly = true;
             // 
             // Provincia
             // 
             this.Provincia.HeaderText = "Provincia";
             this.Provincia.Name = "Provincia";
+            this.Provincia.ReadOnly = true;
             // 
             // Partido
             // 
             this.Partido.HeaderText = "Partido";
             this.Partido.Name = "Partido";
+            this.Partido.ReadOnly = true;
             // 
             // Imagen
             // 
             this.Imagen.HeaderText = "Imagen";
             this.Imagen.Name = "Imagen";
+            this.Imagen.ReadOnly = true;
             // 
             // FormBuscar
             // 
