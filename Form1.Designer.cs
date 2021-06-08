@@ -53,6 +53,7 @@ namespace Asambleistas
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Menu = new System.Windows.Forms.PictureBox();
             this.panel_Contenedor = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel_Superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_home)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar)).BeginInit();
@@ -67,6 +68,7 @@ namespace Asambleistas
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_Superior
@@ -122,20 +124,7 @@ namespace Asambleistas
             // 
             // panel_submenu
             // 
-            this.panel_submenu.Controls.Add(this.pictureBox3);
-            this.panel_submenu.Controls.Add(this.btn_buscar);
-            this.panel_submenu.Controls.Add(this.pictureBox2);
-            this.panel_submenu.Controls.Add(this.btn_Modificar);
-            this.panel_submenu.Controls.Add(this.pictureBox1);
-            this.panel_submenu.Controls.Add(this.btn_insertar);
-            this.panel_submenu.Controls.Add(this.picture_socialC);
-            this.panel_submenu.Controls.Add(this.btn_socialCristiano);
-            this.panel_submenu.Controls.Add(this.pictureBox7);
-            this.panel_submenu.Controls.Add(this.btn_Pachakutic);
-            this.panel_submenu.Controls.Add(this.pictureBox6);
-            this.panel_submenu.Controls.Add(this.btn_centroDemocratico);
-            this.panel_submenu.Controls.Add(this.pictureBox5);
-            this.panel_submenu.Controls.Add(this.btn_Creo);
+            this.panel_submenu.Controls.Add(this.tableLayoutPanel1);
             this.panel_submenu.Location = new System.Drawing.Point(0, 62);
             this.panel_submenu.Name = "panel_submenu";
             this.panel_submenu.Size = new System.Drawing.Size(200, 369);
@@ -143,8 +132,9 @@ namespace Asambleistas
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(9, 330);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 330);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(20, 20);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -153,23 +143,27 @@ namespace Asambleistas
             // 
             // btn_buscar
             // 
+            this.btn_buscar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_buscar.BackColor = System.Drawing.Color.White;
             this.btn_buscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_buscar.FlatAppearance.BorderSize = 0;
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.Font = new System.Drawing.Font("Century Gothic", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_buscar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_buscar.Location = new System.Drawing.Point(0, 322);
+            this.btn_buscar.Location = new System.Drawing.Point(29, 322);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(200, 37);
+            this.btn_buscar.Size = new System.Drawing.Size(168, 37);
             this.btn_buscar.TabIndex = 19;
             this.btn_buscar.Text = "BUSCAR\r\n";
+            this.btn_buscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_buscar.UseVisualStyleBackColor = false;
             this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(9, 277);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 276);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,25 +172,27 @@ namespace Asambleistas
             // 
             // btn_Modificar
             // 
+            this.btn_Modificar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_Modificar.BackColor = System.Drawing.Color.White;
             this.btn_Modificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Modificar.FlatAppearance.BorderSize = 0;
             this.btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Modificar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Modificar.Font = new System.Drawing.Font("Century Gothic", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Modificar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_Modificar.Location = new System.Drawing.Point(0, 269);
+            this.btn_Modificar.Location = new System.Drawing.Point(29, 267);
             this.btn_Modificar.Name = "btn_Modificar";
-            this.btn_Modificar.Size = new System.Drawing.Size(200, 37);
+            this.btn_Modificar.Size = new System.Drawing.Size(168, 37);
             this.btn_Modificar.TabIndex = 17;
             this.btn_Modificar.Text = "MODIFICAR ASAMBLEISTA";
-            this.btn_Modificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Modificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Modificar.UseVisualStyleBackColor = false;
             this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(9, 225);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 224);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -205,23 +201,27 @@ namespace Asambleistas
             // 
             // btn_insertar
             // 
+            this.btn_insertar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_insertar.BackColor = System.Drawing.Color.White;
             this.btn_insertar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_insertar.FlatAppearance.BorderSize = 0;
             this.btn_insertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_insertar.Font = new System.Drawing.Font("Century Gothic", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_insertar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_insertar.Location = new System.Drawing.Point(0, 217);
+            this.btn_insertar.Location = new System.Drawing.Point(29, 215);
             this.btn_insertar.Name = "btn_insertar";
-            this.btn_insertar.Size = new System.Drawing.Size(200, 37);
+            this.btn_insertar.Size = new System.Drawing.Size(168, 37);
             this.btn_insertar.TabIndex = 15;
             this.btn_insertar.Text = "NUEVO ASAMBLEISTA";
+            this.btn_insertar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_insertar.UseVisualStyleBackColor = false;
             this.btn_insertar.Click += new System.EventHandler(this.btn_insertar_Click);
             // 
             // picture_socialC
             // 
+            this.picture_socialC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picture_socialC.Image = ((System.Drawing.Image)(resources.GetObject("picture_socialC.Image")));
-            this.picture_socialC.Location = new System.Drawing.Point(9, 173);
+            this.picture_socialC.Location = new System.Drawing.Point(3, 172);
             this.picture_socialC.Name = "picture_socialC";
             this.picture_socialC.Size = new System.Drawing.Size(20, 20);
             this.picture_socialC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -230,23 +230,27 @@ namespace Asambleistas
             // 
             // btn_socialCristiano
             // 
+            this.btn_socialCristiano.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_socialCristiano.BackColor = System.Drawing.Color.White;
             this.btn_socialCristiano.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_socialCristiano.FlatAppearance.BorderSize = 0;
             this.btn_socialCristiano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_socialCristiano.Font = new System.Drawing.Font("Century Gothic", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_socialCristiano.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_socialCristiano.Location = new System.Drawing.Point(0, 165);
+            this.btn_socialCristiano.Location = new System.Drawing.Point(29, 163);
             this.btn_socialCristiano.Name = "btn_socialCristiano";
-            this.btn_socialCristiano.Size = new System.Drawing.Size(200, 37);
+            this.btn_socialCristiano.Size = new System.Drawing.Size(168, 37);
             this.btn_socialCristiano.TabIndex = 13;
             this.btn_socialCristiano.Text = "SOCIAL CRISTIANO\r\n";
+            this.btn_socialCristiano.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_socialCristiano.UseVisualStyleBackColor = false;
             this.btn_socialCristiano.Click += new System.EventHandler(this.btn_socialCristiano_Click);
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(9, 120);
+            this.pictureBox7.Location = new System.Drawing.Point(3, 120);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(20, 20);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -255,23 +259,27 @@ namespace Asambleistas
             // 
             // btn_Pachakutic
             // 
+            this.btn_Pachakutic.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_Pachakutic.BackColor = System.Drawing.Color.White;
             this.btn_Pachakutic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Pachakutic.FlatAppearance.BorderSize = 0;
             this.btn_Pachakutic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Pachakutic.Font = new System.Drawing.Font("Century Gothic", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Pachakutic.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_Pachakutic.Location = new System.Drawing.Point(0, 112);
+            this.btn_Pachakutic.Location = new System.Drawing.Point(29, 111);
             this.btn_Pachakutic.Name = "btn_Pachakutic";
-            this.btn_Pachakutic.Size = new System.Drawing.Size(200, 37);
+            this.btn_Pachakutic.Size = new System.Drawing.Size(168, 37);
             this.btn_Pachakutic.TabIndex = 11;
             this.btn_Pachakutic.Text = "PACHAKUTIK\r\n";
+            this.btn_Pachakutic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Pachakutic.UseVisualStyleBackColor = false;
             this.btn_Pachakutic.Click += new System.EventHandler(this.btn_Pachakutic_Click);
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(9, 68);
+            this.pictureBox6.Location = new System.Drawing.Point(3, 68);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(20, 20);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -280,24 +288,27 @@ namespace Asambleistas
             // 
             // btn_centroDemocratico
             // 
+            this.btn_centroDemocratico.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_centroDemocratico.BackColor = System.Drawing.Color.White;
             this.btn_centroDemocratico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_centroDemocratico.FlatAppearance.BorderSize = 0;
             this.btn_centroDemocratico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_centroDemocratico.Font = new System.Drawing.Font("Century Gothic", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_centroDemocratico.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_centroDemocratico.Location = new System.Drawing.Point(0, 60);
+            this.btn_centroDemocratico.Location = new System.Drawing.Point(29, 59);
             this.btn_centroDemocratico.Name = "btn_centroDemocratico";
-            this.btn_centroDemocratico.Size = new System.Drawing.Size(200, 37);
+            this.btn_centroDemocratico.Size = new System.Drawing.Size(168, 37);
             this.btn_centroDemocratico.TabIndex = 9;
             this.btn_centroDemocratico.Text = "CENTRO DEMOCRATICO\r\n";
-            this.btn_centroDemocratico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_centroDemocratico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_centroDemocratico.UseVisualStyleBackColor = false;
             this.btn_centroDemocratico.Click += new System.EventHandler(this.btn_centroDemocratico_Click);
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(9, 15);
+            this.pictureBox5.Location = new System.Drawing.Point(3, 16);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(20, 20);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -306,17 +317,19 @@ namespace Asambleistas
             // 
             // btn_Creo
             // 
+            this.btn_Creo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_Creo.BackColor = System.Drawing.Color.White;
             this.btn_Creo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Creo.FlatAppearance.BorderSize = 0;
             this.btn_Creo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Creo.Font = new System.Drawing.Font("Century Gothic", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Creo.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_Creo.Location = new System.Drawing.Point(0, 7);
+            this.btn_Creo.Location = new System.Drawing.Point(29, 7);
             this.btn_Creo.Name = "btn_Creo";
-            this.btn_Creo.Size = new System.Drawing.Size(200, 37);
+            this.btn_Creo.Size = new System.Drawing.Size(168, 37);
             this.btn_Creo.TabIndex = 7;
             this.btn_Creo.Text = "IZQUIERDA DEMOCRATICA";
-            this.btn_Creo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Creo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Creo.UseVisualStyleBackColor = false;
             this.btn_Creo.Click += new System.EventHandler(this.btn_Creo_Click);
             // 
@@ -336,7 +349,7 @@ namespace Asambleistas
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(42, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 17);
+            this.label2.Size = new System.Drawing.Size(54, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "MENU";
             // 
@@ -359,9 +372,42 @@ namespace Asambleistas
             this.panel_Contenedor.Size = new System.Drawing.Size(800, 662);
             this.panel_Contenedor.TabIndex = 5;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87F));
+            this.tableLayoutPanel1.Controls.Add(this.btn_Creo, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.btn_centroDemocratico, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btn_buscar, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.btn_Pachakutic, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_socialCristiano, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btn_Modificar, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btn_insertar, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.picture_socialC, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 4);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 7;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 369);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 692);
@@ -389,6 +435,7 @@ namespace Asambleistas
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -418,6 +465,7 @@ namespace Asambleistas
         private System.Windows.Forms.Button btn_insertar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
 
