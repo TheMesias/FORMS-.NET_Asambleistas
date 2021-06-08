@@ -31,9 +31,16 @@ namespace Asambleistas
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel_Superior = new System.Windows.Forms.Panel();
+            this.btn_home = new System.Windows.Forms.PictureBox();
             this.btn_cerrar = new System.Windows.Forms.PictureBox();
             this.panel_Lateral = new System.Windows.Forms.Panel();
             this.panel_submenu = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_Modificar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_insertar = new System.Windows.Forms.Button();
             this.picture_socialC = new System.Windows.Forms.PictureBox();
             this.btn_socialCristiano = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -42,25 +49,24 @@ namespace Asambleistas
             this.btn_centroDemocratico = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btn_Creo = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btn_Directiva = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Menu = new System.Windows.Forms.PictureBox();
             this.panel_Contenedor = new System.Windows.Forms.Panel();
-            this.btn_home = new System.Windows.Forms.PictureBox();
             this.panel_Superior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_home)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar)).BeginInit();
             this.panel_Lateral.SuspendLayout();
             this.panel_submenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_socialC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_home)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Superior
@@ -76,6 +82,18 @@ namespace Asambleistas
             this.panel_Superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_Superior_MouseDown);
             this.panel_Superior.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_Superior_MouseMove);
             this.panel_Superior.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_Superior_MouseUp);
+            // 
+            // btn_home
+            // 
+            this.btn_home.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_home.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.Image")));
+            this.btn_home.Location = new System.Drawing.Point(945, 6);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(20, 20);
+            this.btn_home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_home.TabIndex = 6;
+            this.btn_home.TabStop = false;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // btn_cerrar
             // 
@@ -104,6 +122,12 @@ namespace Asambleistas
             // 
             // panel_submenu
             // 
+            this.panel_submenu.Controls.Add(this.pictureBox3);
+            this.panel_submenu.Controls.Add(this.btn_buscar);
+            this.panel_submenu.Controls.Add(this.pictureBox2);
+            this.panel_submenu.Controls.Add(this.btn_Modificar);
+            this.panel_submenu.Controls.Add(this.pictureBox1);
+            this.panel_submenu.Controls.Add(this.btn_insertar);
             this.panel_submenu.Controls.Add(this.picture_socialC);
             this.panel_submenu.Controls.Add(this.btn_socialCristiano);
             this.panel_submenu.Controls.Add(this.pictureBox7);
@@ -112,17 +136,92 @@ namespace Asambleistas
             this.panel_submenu.Controls.Add(this.btn_centroDemocratico);
             this.panel_submenu.Controls.Add(this.pictureBox5);
             this.panel_submenu.Controls.Add(this.btn_Creo);
-            this.panel_submenu.Controls.Add(this.pictureBox3);
-            this.panel_submenu.Controls.Add(this.btn_Directiva);
             this.panel_submenu.Location = new System.Drawing.Point(0, 62);
             this.panel_submenu.Name = "panel_submenu";
-            this.panel_submenu.Size = new System.Drawing.Size(200, 256);
+            this.panel_submenu.Size = new System.Drawing.Size(200, 369);
             this.panel_submenu.TabIndex = 5;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(9, 330);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.BackColor = System.Drawing.Color.White;
+            this.btn_buscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_buscar.FlatAppearance.BorderSize = 0;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btn_buscar.Location = new System.Drawing.Point(0, 322);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(200, 37);
+            this.btn_buscar.TabIndex = 19;
+            this.btn_buscar.Text = "BUSCAR\r\n";
+            this.btn_buscar.UseVisualStyleBackColor = false;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(9, 277);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btn_Modificar
+            // 
+            this.btn_Modificar.BackColor = System.Drawing.Color.White;
+            this.btn_Modificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Modificar.FlatAppearance.BorderSize = 0;
+            this.btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Modificar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Modificar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btn_Modificar.Location = new System.Drawing.Point(0, 269);
+            this.btn_Modificar.Name = "btn_Modificar";
+            this.btn_Modificar.Size = new System.Drawing.Size(200, 37);
+            this.btn_Modificar.TabIndex = 17;
+            this.btn_Modificar.Text = "MODIFICAR ASAMBLEISTA";
+            this.btn_Modificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Modificar.UseVisualStyleBackColor = false;
+            this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(9, 225);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_insertar
+            // 
+            this.btn_insertar.BackColor = System.Drawing.Color.White;
+            this.btn_insertar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_insertar.FlatAppearance.BorderSize = 0;
+            this.btn_insertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_insertar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btn_insertar.Location = new System.Drawing.Point(0, 217);
+            this.btn_insertar.Name = "btn_insertar";
+            this.btn_insertar.Size = new System.Drawing.Size(200, 37);
+            this.btn_insertar.TabIndex = 15;
+            this.btn_insertar.Text = "NUEVO ASAMBLEISTA";
+            this.btn_insertar.UseVisualStyleBackColor = false;
+            this.btn_insertar.Click += new System.EventHandler(this.btn_insertar_Click);
             // 
             // picture_socialC
             // 
             this.picture_socialC.Image = ((System.Drawing.Image)(resources.GetObject("picture_socialC.Image")));
-            this.picture_socialC.Location = new System.Drawing.Point(9, 218);
+            this.picture_socialC.Location = new System.Drawing.Point(9, 173);
             this.picture_socialC.Name = "picture_socialC";
             this.picture_socialC.Size = new System.Drawing.Size(20, 20);
             this.picture_socialC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -136,7 +235,7 @@ namespace Asambleistas
             this.btn_socialCristiano.FlatAppearance.BorderSize = 0;
             this.btn_socialCristiano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_socialCristiano.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_socialCristiano.Location = new System.Drawing.Point(0, 210);
+            this.btn_socialCristiano.Location = new System.Drawing.Point(0, 165);
             this.btn_socialCristiano.Name = "btn_socialCristiano";
             this.btn_socialCristiano.Size = new System.Drawing.Size(200, 37);
             this.btn_socialCristiano.TabIndex = 13;
@@ -147,7 +246,7 @@ namespace Asambleistas
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(9, 165);
+            this.pictureBox7.Location = new System.Drawing.Point(9, 120);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(20, 20);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -161,7 +260,7 @@ namespace Asambleistas
             this.btn_Pachakutic.FlatAppearance.BorderSize = 0;
             this.btn_Pachakutic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Pachakutic.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_Pachakutic.Location = new System.Drawing.Point(0, 157);
+            this.btn_Pachakutic.Location = new System.Drawing.Point(0, 112);
             this.btn_Pachakutic.Name = "btn_Pachakutic";
             this.btn_Pachakutic.Size = new System.Drawing.Size(200, 37);
             this.btn_Pachakutic.TabIndex = 11;
@@ -172,7 +271,7 @@ namespace Asambleistas
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(9, 113);
+            this.pictureBox6.Location = new System.Drawing.Point(9, 68);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(20, 20);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -186,7 +285,7 @@ namespace Asambleistas
             this.btn_centroDemocratico.FlatAppearance.BorderSize = 0;
             this.btn_centroDemocratico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_centroDemocratico.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_centroDemocratico.Location = new System.Drawing.Point(0, 105);
+            this.btn_centroDemocratico.Location = new System.Drawing.Point(0, 60);
             this.btn_centroDemocratico.Name = "btn_centroDemocratico";
             this.btn_centroDemocratico.Size = new System.Drawing.Size(200, 37);
             this.btn_centroDemocratico.TabIndex = 9;
@@ -198,7 +297,7 @@ namespace Asambleistas
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(9, 60);
+            this.pictureBox5.Location = new System.Drawing.Point(9, 15);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(20, 20);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -212,38 +311,14 @@ namespace Asambleistas
             this.btn_Creo.FlatAppearance.BorderSize = 0;
             this.btn_Creo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Creo.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_Creo.Location = new System.Drawing.Point(0, 52);
+            this.btn_Creo.Location = new System.Drawing.Point(0, 7);
             this.btn_Creo.Name = "btn_Creo";
             this.btn_Creo.Size = new System.Drawing.Size(200, 37);
             this.btn_Creo.TabIndex = 7;
-            this.btn_Creo.Text = "CREO\r\n\r\n";
+            this.btn_Creo.Text = "IZQUIERDA DEMOCRATICA";
+            this.btn_Creo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Creo.UseVisualStyleBackColor = false;
             this.btn_Creo.Click += new System.EventHandler(this.btn_Creo_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(9, 8);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btn_Directiva
-            // 
-            this.btn_Directiva.BackColor = System.Drawing.Color.White;
-            this.btn_Directiva.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Directiva.FlatAppearance.BorderSize = 0;
-            this.btn_Directiva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Directiva.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_Directiva.Location = new System.Drawing.Point(0, 0);
-            this.btn_Directiva.Name = "btn_Directiva";
-            this.btn_Directiva.Size = new System.Drawing.Size(200, 37);
-            this.btn_Directiva.TabIndex = 5;
-            this.btn_Directiva.Text = "DIRECTIVA PRINCIPAL\r\n";
-            this.btn_Directiva.UseVisualStyleBackColor = false;
-            this.btn_Directiva.Click += new System.EventHandler(this.btn_Directiva_Click);
             // 
             // pictureBox4
             // 
@@ -284,18 +359,6 @@ namespace Asambleistas
             this.panel_Contenedor.Size = new System.Drawing.Size(800, 662);
             this.panel_Contenedor.TabIndex = 5;
             // 
-            // btn_home
-            // 
-            this.btn_home.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_home.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.Image")));
-            this.btn_home.Location = new System.Drawing.Point(945, 6);
-            this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(20, 20);
-            this.btn_home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_home.TabIndex = 6;
-            this.btn_home.TabStop = false;
-            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -312,18 +375,20 @@ namespace Asambleistas
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel_Superior.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_home)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar)).EndInit();
             this.panel_Lateral.ResumeLayout(false);
             this.panel_Lateral.PerformLayout();
             this.panel_submenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_socialC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_home)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -337,8 +402,6 @@ namespace Asambleistas
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox btn_Menu;
         private System.Windows.Forms.Panel panel_submenu;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btn_Directiva;
         private System.Windows.Forms.PictureBox picture_socialC;
         private System.Windows.Forms.Button btn_socialCristiano;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -349,6 +412,12 @@ namespace Asambleistas
         private System.Windows.Forms.Button btn_Creo;
         private System.Windows.Forms.Panel panel_Contenedor;
         private System.Windows.Forms.PictureBox btn_home;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btn_Modificar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_insertar;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btn_buscar;
     }
 }
 

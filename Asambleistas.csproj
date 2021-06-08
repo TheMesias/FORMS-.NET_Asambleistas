@@ -46,12 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClDatos.cs" />
+    <Compile Include="Asambleista.cs" />
+    <Compile Include="Cartafront.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartafront.Designer.cs">
+      <DependentUpon>Cartafront.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClValidar.cs" />
+    <Compile Include="Clvalor1.cs" />
+    <Compile Include="Datos.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAsambleistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAsambleistas.Designer.cs">
+      <DependentUpon>FormAsambleistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscar.Designer.cs">
+      <DependentUpon>FormBuscar.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDescripcion.cs">
       <SubType>Form</SubType>
@@ -59,58 +80,49 @@
     <Compile Include="FormDescripcion.Designer.cs">
       <DependentUpon>FormDescripcion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDirectiva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormDirectiva.Designer.cs">
-      <DependentUpon>FormDirectiva.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPSC1.cs">
+    <Compile Include="FormInsertar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPSC1.Designer.cs">
-      <DependentUpon>FrmPSC1.cs</DependentUpon>
+    <Compile Include="FormInsertar.Designer.cs">
+      <DependentUpon>FormInsertar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPSC2.cs">
+    <Compile Include="FormModificar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPSC2.Designer.cs">
-      <DependentUpon>FrmPSC2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmSocialCristiano.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSocialCristiano.Designer.cs">
-      <DependentUpon>FrmSocialCristiano.cs</DependentUpon>
+    <Compile Include="FormModificar.Designer.cs">
+      <DependentUpon>FormModificar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cartafront.resx">
+      <DependentUpon>Cartafront.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAsambleistas.resx">
+      <DependentUpon>FormAsambleistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscar.resx">
+      <DependentUpon>FormBuscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDescripcion.resx">
       <DependentUpon>FormDescripcion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDirectiva.resx">
-      <DependentUpon>FormDirectiva.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPSC1.resx">
-      <DependentUpon>FrmPSC1.cs</DependentUpon>
+    <EmbeddedResource Include="FormInsertar.resx">
+      <DependentUpon>FormInsertar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPSC2.resx">
-      <DependentUpon>FrmPSC2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSocialCristiano.resx">
-      <DependentUpon>FrmSocialCristiano.cs</DependentUpon>
+    <EmbeddedResource Include="FormModificar.resx">
+      <DependentUpon>FormModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

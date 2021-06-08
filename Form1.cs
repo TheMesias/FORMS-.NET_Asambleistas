@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 namespace Asambleistas
 {
+    
     public partial class Form1 : Form
     {
+        FormAsambleistas obj = new FormAsambleistas();
         
+       
         public Form1()
         {
             InitializeComponent();
-            showForm(new FormHome()); 
+            showForm(new FormHome());
+          
             desing();
         }
 
@@ -43,37 +47,39 @@ namespace Asambleistas
             }
         }
 
-        private void btn_Menu_Click(object sender, EventArgs e)
+       private void btn_Menu_Click(object sender, EventArgs e)
         {
             showSubmenu(panel_submenu); 
         }
 
-        private void btn_Directiva_Click(object sender, EventArgs e)
-        {
-            hideSubmenu();
-            showForm(new FormDirectiva());
-        }
 
         private void btn_Creo_Click(object sender, EventArgs e)
         {
+            Clvalor1.valor = "ID12"; 
+            showForm(new FormAsambleistas());
             hideSubmenu();
         }
 
         private void btn_centroDemocratico_Click(object sender, EventArgs e)
         {
+            Clvalor1.valor = "CD 1";
+            showForm(new FormAsambleistas());
             hideSubmenu();
         }
 
         private void btn_Pachakutic_Click(object sender, EventArgs e)
         {
+            Clvalor1.valor = "MUPP";
+            showForm(new FormAsambleistas());
             hideSubmenu();
         }
 
         private void btn_socialCristiano_Click(object sender, EventArgs e)
         {
-       
+            Clvalor1.valor = "PSC";
+            showForm(new FormAsambleistas());
             hideSubmenu();
-            showForm(new FrmSocialCristiano());
+            
          
 
         }
@@ -124,6 +130,22 @@ namespace Asambleistas
         private void btn_home_Click(object sender, EventArgs e)
         {
             showForm(new FormHome());
+        }
+
+       
+        private void btn_insertar_Click(object sender, EventArgs e)
+        {
+            showForm(new FormInsertar());
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            showForm(new FormBuscar());
+        }
+
+        private void btn_Modificar_Click(object sender, EventArgs e)
+        {
+            showForm(new FormModificar());
         }
     }
 }
