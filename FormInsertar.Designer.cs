@@ -107,6 +107,7 @@ namespace Asambleistas
             // 
             this.cb_provin.BackColor = System.Drawing.SystemColors.MenuBar;
             this.cb_provin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cb_provin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_provin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cb_provin.FormattingEnabled = true;
             this.cb_provin.Items.AddRange(new object[] {
@@ -143,6 +144,7 @@ namespace Asambleistas
             // 
             this.cb_partido.BackColor = System.Drawing.SystemColors.MenuBar;
             this.cb_partido.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cb_partido.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_partido.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cb_partido.FormattingEnabled = true;
             this.cb_partido.Items.AddRange(new object[] {

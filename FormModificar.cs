@@ -57,28 +57,34 @@ namespace Asambleistas
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             string nombre = TxtNombus.Text;
-
-
-            foreach (var asambleista in Datos.Listado)
+            if (nombre!="")
             {
-                var index = Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre);
-                posicion = index;
+                try
+                {
+                    foreach (var asambleista in Datos.Listado)
+                    {
+                        var index = Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre);
+                        posicion = index;
 
 
-                nombre1 = Datos.Listado[Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre)].NombreAsambleista1;
-                info1 = Datos.Listado[Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre)].Información1;
-                provincia1 = Datos.Listado[Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre)].Provincia1;
-                partido1 = Datos.Listado[Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre)].Partido;
-                imagen1 = Datos.Listado[Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre)].Imagen;
+                        nombre1 = Datos.Listado[Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre)].NombreAsambleista1;
+                        info1 = Datos.Listado[Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre)].Información1;
+                        provincia1 = Datos.Listado[Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre)].Provincia1;
+                        partido1 = Datos.Listado[Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre)].Partido;
+                        imagen1 = Datos.Listado[Datos.Listado.FindIndex(x => x.NombreAsambleista1 == nombre)].Imagen;
 
-                TxtNombre.Text = nombre1;
-                TxtInfo.Text = info1;
-                TxtProvin.Text = provincia1;
-                TxtPartido.Text = partido1;
-                TxtImagen.Text = imagen1;
+                        TxtNombre.Text = nombre1;
+                        TxtInfo.Text = info1;
+                        TxtProvin.Text = provincia1;
+                        TxtPartido.Text = partido1;
+                        TxtImagen.Text = imagen1;
 
-                return;
+                        return;
+                    }
+                }
+                catch { MessageBox.Show("No se ha encontrado al asambleista", "", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             }
-        }
+            else { MessageBox.Show("No se ha ingresado nombre a buscar", "", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
+            }
     }
 }
